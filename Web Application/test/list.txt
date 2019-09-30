@@ -1,0 +1,13 @@
+DES/3DES or TripleDES
+Blowfish
+AES
+TwoFish
+
+
+IDEA
+MD5
+SHa-2 and 3
+HMAC
+RSA
+
+

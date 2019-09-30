@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container h-100">
+	<div class="row align-items-center h-100">
+		<div class="col-md-7 mx-auto details">
+			<!-- <h1>Remember Me!</h1>
+			<h2>Protect your passwords</h2>
+			<h2>the smart way!</h2> -->
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      	<h1>Remember Me!</h1>
+					<h2>Protect your passwords</h2>
+					<h2>the smart way!</h2>
+					<p>
+			      		More than 50 encryption algorithms
+			      	</p>
+			    </div>
+			    <div class="carousel-item">
+			    	<h1>&nbsp;</h1>
+			      	<h2>Only remember easy password!</h2>
+			      	<h2>and login easily</h2>
+			      	<h2>&nbsp;</h2>
+			    </div>
+			    <!-- <div class="carousel-item w-100">
+			      <p>*few more details here*
+			      	hello world
+			      	made by raghav and Pramath!
+			      </p>
+			    </div> -->
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-5 mx-auto login-section" id="login-reg-section">
+			<div id="login-panel">
+			<div class="head-login"align="center">
+				<h2>Login</h2>
+			</div>
+			 <form action="" method="POST">
+                 {{ form1.hidden_tag() }}
+			  <div class="form-group font-sans">
+			    <!-- <label for="emailuser">Email address:</label> -->
+			    {{ form1.username.label }} {{ form1.username}}
+			  </div>
+			  <div class="form-group">
+			    <!-- <label for="pwd">Password:</label> -->
+			    {{ form1.password.label }} {{ form1.password }}
+			  </div>
+			  <div class="checkbox">
+			    <label><input type="checkbox"> Keep me signed in</label>
+			  </div>
+			  <div class="" align="center">
+					{{ form1.submit() }}
+			  </div>
+			  <br>
+			  <div class="new-reg" align="center">
+			  	New to RememberMe? <a href="#register" onclick="loginToRegister()">Register here</a>
+			  </div>
+			 </form>
+			</div>
+			<div id="register-panel" style="display: none">
+			<div class="head-login"align="center">
+				<h2>Register</h2>
+			</div>
+			 <form action="" method="POST" nonvalidate>
+                 {{ form.hidden_tag() }}
+                 <div class="form-group font-sans">
+                     {{ form.name.label }} {{ form.name }}
+                     {{ form.username.label }} {{ form.username }}
+                     {% for error in form.username.errors %}
+                     <span stye="color: red;">[{{ error }}]</span>
+                     {% endfor %}
+                     {{ form.email.label }} {{ form.email }}
+                     {% for error in form.username.errors %}
+                     <span stye="color: red;">[{{ error }}]</span>
+                     {% endfor %}
+                 </div>
+                 <div class="form-group">
+                     <!-- <label for="pwd">Password:</label> -->
+                     {{ form.password.label }} {{ form.password }}
+                     {% for error in form.username.errors %}
+                     <span stye="color: red;">[{{ error }}]</span>
+                     {% endfor %}
+                     {{ form.c_password.label }} {{ form.c_password }}
+                     {% for error in form.username.errors %}
+                     <span stye="color: red;">[{{ error }}]</span>
+                     {% endfor %}
+                 </div>
+			  <div class="" align="center">
+			  	{{ form.submit() }}
+			  </div>
+			  <br>
+			  <div class="new-reg" align="center">
+			  	Already have an account? <a href="#register" onclick="loginToRegister()">Sign In</a>
+			  </div>
+			 </form>
+			</div> <!-- form registration ends -->
+	</div>
+	</div>
+</div>
+{% endblock %}
