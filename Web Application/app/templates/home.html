@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="../static/css/bootstrap.css" rel="stylesheet">
+	<link href="../static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+	<meta charset="utf-8">
+</head>
+<body>
+	<span name="navigation">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#"> {{ user.username }} </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#"> Home&nbsp;&nbsp;&nbsp;&nbsp; <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" href="#"> Add Website&nbsp;&nbsp;&nbsp;&nbsp; </a>
+		      <a class="nav-item nav-link" href="#"> About Us&nbsp;&nbsp;&nbsp;&nbsp; </a>
+					<a class="nav-item nav-link" href="#"> Logout&nbsp;&nbsp;&nbsp;&nbsp; </a>
+		    </div>
+		  </div>
+		</nav>
+	</span>
+<div class="container-fluid">
+	<div class="row main-frame">
+		<div class="icon", id="demo">
+            <script src="../static/js/icon.js"></script>
+		</div>
+		<div class="col-md website-area">
+            <div id="main" class="container-fluid">
+              <h1>Websites</h1>
+              <table id="data" class="data-table data-table-horizontal data-table-highlight">
+                <tbody>
+									{% for site in websites %}
+                  <tr>
+					<form action='' method='POST'>
+                    					<td><input type="text" value="{{ site[0] }}" name="webname" /></td>
+										<td><input type="password" id="spwd" name="passphase"/></td>
+										<td><button type="submit" onclick="window.open('{{ site[1] }}')">{{ site[0] }}</button></td>
+                    <td><a value="Delete" onclick="deleteRow(this)"><i class="fa fa-trash-o fa-2x"></i></a></td>
+									</form>
+                  </tr>
+									{% endfor %}
+
+              </table>
+              <div class="pull-right">
+                <input type="button" value="Add" class="top-buffer" onclick="addRow('data')" />
+              </div>
+            </div>
+              <script  src="../static/js/scriptTable.js"></script>
+		</div>
+	</div>
+</div>
+</body>
+</html>
