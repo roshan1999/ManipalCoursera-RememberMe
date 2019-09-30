@@ -4,7 +4,7 @@ A security Web/Mobile application project for Manipal Coursera ShowYourSkills
 
 ### Introduction
 
-> - Ever wondered what it would be like to not remember passwords?
+> **Ever wondered what it would be like to not remember passwords?**
 > - To have one password that does it all. 
 > - To have one user interface that does it all. 
 > - To not risk the developers or the application from knowing your password
@@ -21,11 +21,11 @@ numbers, symbols and/or capitals are not needed.
 
 #### How does it work?
 
-- Select a password that is easiest for you to remember for whichever website you want to. 
+> - Select a password that is easiest for you to remember for whichever website you want to. 
   - You can choose to have the same password for all your websites or have different ones. 
-- Every user that uses our application would have an ID that identifies their unique encryption key. So there is no storing
+> - Every user that uses our application would have an ID that identifies their unique encryption key. So there is no storing
 of passwords done, neither locally nor in a server database. 
-- This encryption key would be used to generate a password from the password you want and would open the website where you want to enter the password. 
+> - This encryption key would be used to generate a password from the password you want and would open the website where you want to enter the password. 
 
 #### User point of view -
 
