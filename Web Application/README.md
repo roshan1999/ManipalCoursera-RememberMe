@@ -7,5 +7,5 @@ We are saving the passwords using more than 50 different random encrytion algori
 
 <h2> How to Run</h2>
 - Clone the git repository<br>
-- Install the requirements file <code>pip install -r requirements</code><br>
+- Install the requirements file <code>pip install -r requirements.txt</code><br>
 - run <code>python app.py</code> or <code>Flask run</code>
