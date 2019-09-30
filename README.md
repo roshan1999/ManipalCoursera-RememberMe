@@ -4,17 +4,17 @@ A security Web/Mobile application project for Manipal Coursera ShowYourSkills
 
 ### Introduction
 
-> Ever wondered what it would be like to not remember passwords?
-> To have one password that does it all. 
-> To have one user interface that does it all. 
-> To not risk the developers or the application from knowing your password
-> To have your password leaked and still be completely risk free from hackers/phishing/pharming.
+> - Ever wondered what it would be like to not remember passwords?
+> - To have one password that does it all. 
+> - To have one user interface that does it all. 
+> - To not risk the developers or the application from knowing your password
+> - To have your password leaked and still be completely risk free from hackers/phishing/pharming.
 
 #### Introducing RememberMe
 
-> A one stop portal for all your troubles!!!
-> RememberMe remembers your identity for you without compromising your security.
-> Unlike traditional applications that saves passwords in a log or suggests different passwords,
+> - A one stop portal for all your troubles!!!
+> - RememberMe remembers your identity for you without compromising your security.
+> - Unlike traditional applications that saves passwords in a log or suggests different passwords,
 RememberMe is a portal where all you as a user have to do is remember one password - it doesn't matter whether
 it is a small password or a long one. We assure you, that the length of your password or even the inclusion of 
 numbers, symbols and/or capitals are not needed.
