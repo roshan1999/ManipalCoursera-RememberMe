@@ -22,7 +22,7 @@ numbers, symbols and/or capitals are not needed.
 #### How does it work?
 
 > - Select a password that is easiest for you to remember for whichever website you want to. 
-  - You can choose to have the same password for all your websites or have different ones. 
+>  - You can choose to have the same password for all your websites or have different ones. 
 > - Every user that uses our application would have an ID that identifies their unique encryption key. So there is no storing
 of passwords done, neither locally nor in a server database. 
 > - This encryption key would be used to generate a password from the password you want and would open the website where you want to enter the password. 
