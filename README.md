@@ -48,7 +48,7 @@ of passwords done, neither locally nor in a server database.
 - OTP generation for easy password access.
 - Use Face unlock condition to their reliability. 
 - Added support to providing changing of password in one click. 
-- Hassle free > 1 step Verification
+- Hassle free more than 1 step Verification
 
 
 
